@@ -1,8 +1,9 @@
 name: ZapZap PRD - PARA S3
 
 on:
-  release:
-    types: [commit]
+  push:
+  branches:
+    - master
 
 jobs:
   build:
