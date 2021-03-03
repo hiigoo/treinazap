@@ -2,7 +2,7 @@ name: ZapZap PRD - PARA S3
 
 on:
   push:
-  branches:
+    branches:
     - master
 
 jobs:
