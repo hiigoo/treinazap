@@ -1,7 +1,7 @@
 name: ZapZap PRD - PARA S3
 
 on:
-  workflow-dispatch:
+  workflow_dispatch:
 
 jobs:
   build:
