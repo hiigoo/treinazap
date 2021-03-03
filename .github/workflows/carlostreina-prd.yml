@@ -1,9 +1,7 @@
 name: ZapZap PRD - PARA S3
 
 on:
-  push:
-    branches:
-      - master
+  workflow-dispatch:
 
 jobs:
   build:
