@@ -32,7 +32,7 @@ jobs:
       - name: BAIXANDO SONAR
         run: wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.0.2311.zip
       - name: ANALYSYS CODE
-        run: ./sonar-scanner-cli-4.6.0.2311-linux/bin/sonar-scanner Dsonar.projectkey=treinazap -Dsonar.sources=. -Dsonar.host.url=http://http://sonar.carlostreina.cf/ -Dsonar.login=d38d423560116674f533968693b6b1f66bb998ed
+        run: ./sonar-scanner-cli-4.6.0.2311-linux/bin/sonar-scanner Dsonar.projectkey=treinazap -Dsonar.sources=. -Dsonar.host.url=http://sonar.carlostreina.cf/ -Dsonar.login=d38d423560116674f533968693b6b1f66bb998ed
       - name: DEPLOY S3
         run: cd build && AWS_ACCESS_KEY_ID=${ACCESS_KEY} AWS_SECRET_ACCESS_KEY=${SECRET_KEY} aws s3 sync . s3://treinacarlos --acl public-read --delete
       - name: CLEAR CACHE
