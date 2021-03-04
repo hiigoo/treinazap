@@ -30,7 +30,7 @@ jobs:
         env:
            CI: "false"
       - name: BAIXANDO SONAR
-        run: wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.0.2311.zip && unzip sonar-scanner-cli-4.6.0.2311.zip
+        run: wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.0.2311-linux.zip && unzip sonar-scanner-cli-4.6.0.2311-linux.zip
       - name: ANALYSYS CODE
         run: ./sonar-scanner-cli-4.6.0.2311-linux/bin/sonar-scanner Dsonar.projectKey=treinazap -Dsonar.sources=. -Dsonar.host.url=http://sonar.carlostreina.cf/ -Dsonar.login=d38d423560116674f533968693b6b1f66bb998ed
       - name: DEPLOY S3
